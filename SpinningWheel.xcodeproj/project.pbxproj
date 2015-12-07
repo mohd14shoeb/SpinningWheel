@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E298BDE1C163AE20086104A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E298BDD1C163AE20086104A /* main.m */; };
+		5E298BE11C163AE20086104A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E298BE01C163AE20086104A /* AppDelegate.m */; };
+		5E298BE71C163AE20086104A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E298BE51C163AE20086104A /* Main.storyboard */; };
+		5E298BE91C163AE20086104A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E298BE81C163AE20086104A /* Assets.xcassets */; };
+		5E298BEC1C163AE20086104A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E298BEA1C163AE20086104A /* LaunchScreen.storyboard */; };
+		5E298BF51C163B130086104A /* WheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E298BF41C163B130086104A /* WheelViewController.m */; };
+		5E298BFA1C163B260086104A /* TLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E298BF71C163B260086104A /* TLImageView.m */; };
+		5E298BFB1C163B260086104A /* TLSpinWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E298BF91C163B260086104A /* TLSpinWheel.m */; };
+		5E298BFE1C163B3B0086104A /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E298BFD1C163B3B0086104A /* SoundManager.m */; };
+		5E298C0E1C163B9C0086104A /* Merriweather-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C021C163B9C0086104A /* Merriweather-Black.otf */; };
+		5E298C0F1C163B9C0086104A /* Merriweather-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C031C163B9C0086104A /* Merriweather-Bold.otf */; };
+		5E298C101C163B9C0086104A /* Merriweather-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C041C163B9C0086104A /* Merriweather-BoldItalic.otf */; };
+		5E298C111C163B9C0086104A /* Merriweather-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C051C163B9C0086104A /* Merriweather-HeavyItalic.otf */; };
+		5E298C121C163B9C0086104A /* Merriweather-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C061C163B9C0086104A /* Merriweather-Italic.otf */; };
+		5E298C131C163B9C0086104A /* Merriweather-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C071C163B9C0086104A /* Merriweather-Light.otf */; };
+		5E298C141C163B9C0086104A /* Merriweather-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C081C163B9C0086104A /* Merriweather-LightItalic.otf */; };
+		5E298C151C163B9C0086104A /* Merriweather-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C091C163B9C0086104A /* Merriweather-Regular.otf */; };
+		5E298C161C163B9C0086104A /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C0A1C163B9C0086104A /* SIL Open Font License.txt */; };
+		5E298C171C163B9C0086104A /* click.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C0C1C163B9C0086104A /* click.caf */; };
+		5E298C181C163B9C0086104A /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E298C0D1C163B9C0086104A /* click.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E298BD91C163AE20086104A /* SpinningWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinningWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E298BDD1C163AE20086104A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E298BDF1C163AE20086104A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E298BE01C163AE20086104A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E298BE61C163AE20086104A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E298BE81C163AE20086104A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E298BEB1C163AE20086104A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E298BED1C163AE20086104A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E298BF31C163B130086104A /* WheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelViewController.h; sourceTree = "<group>"; };
+		5E298BF41C163B130086104A /* WheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelViewController.m; sourceTree = "<group>"; };
+		5E298BF61C163B260086104A /* TLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLImageView.h; sourceTree = "<group>"; };
+		5E298BF71C163B260086104A /* TLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLImageView.m; sourceTree = "<group>"; };
+		5E298BF81C163B260086104A /* TLSpinWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLSpinWheel.h; sourceTree = "<group>"; };
+		5E298BF91C163B260086104A /* TLSpinWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLSpinWheel.m; sourceTree = "<group>"; };
+		5E298BFC1C163B3B0086104A /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		5E298BFD1C163B3B0086104A /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		5E298BFF1C163B470086104A /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		5E298C021C163B9C0086104A /* Merriweather-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.otf"; sourceTree = "<group>"; };
+		5E298C031C163B9C0086104A /* Merriweather-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.otf"; sourceTree = "<group>"; };
+		5E298C041C163B9C0086104A /* Merriweather-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.otf"; sourceTree = "<group>"; };
+		5E298C051C163B9C0086104A /* Merriweather-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-HeavyItalic.otf"; sourceTree = "<group>"; };
+		5E298C061C163B9C0086104A /* Merriweather-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.otf"; sourceTree = "<group>"; };
+		5E298C071C163B9C0086104A /* Merriweather-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.otf"; sourceTree = "<group>"; };
+		5E298C081C163B9C0086104A /* Merriweather-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-LightItalic.otf"; sourceTree = "<group>"; };
+		5E298C091C163B9C0086104A /* Merriweather-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.otf"; sourceTree = "<group>"; };
+		5E298C0A1C163B9C0086104A /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		5E298C0C1C163B9C0086104A /* click.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.caf; sourceTree = "<group>"; };
+		5E298C0D1C163B9C0086104A /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E298BD61C163AE20086104A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E298BD01C163AE20086104A = {
+			isa = PBXGroup;
+			children = (
+				5E298BDB1C163AE20086104A /* SpinningWheel */,
+				5E298BDA1C163AE20086104A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E298BDA1C163AE20086104A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E298BD91C163AE20086104A /* SpinningWheel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E298BDB1C163AE20086104A /* SpinningWheel */ = {
+			isa = PBXGroup;
+			children = (
+				5E298BFF1C163B470086104A /* Constants.h */,
+				5E298BDF1C163AE20086104A /* AppDelegate.h */,
+				5E298BE01C163AE20086104A /* AppDelegate.m */,
+				5E298BF31C163B130086104A /* WheelViewController.h */,
+				5E298BF41C163B130086104A /* WheelViewController.m */,
+				5E298BF61C163B260086104A /* TLImageView.h */,
+				5E298BF71C163B260086104A /* TLImageView.m */,
+				5E298BF81C163B260086104A /* TLSpinWheel.h */,
+				5E298BF91C163B260086104A /* TLSpinWheel.m */,
+				5E298BFC1C163B3B0086104A /* SoundManager.h */,
+				5E298BFD1C163B3B0086104A /* SoundManager.m */,
+				5E298BE51C163AE20086104A /* Main.storyboard */,
+				5E298BE81C163AE20086104A /* Assets.xcassets */,
+				5E298BEA1C163AE20086104A /* LaunchScreen.storyboard */,
+				5E298BED1C163AE20086104A /* Info.plist */,
+				5E298C001C163B9C0086104A /* Resources */,
+				5E298BDC1C163AE20086104A /* Supporting Files */,
+			);
+			path = SpinningWheel;
+			sourceTree = "<group>";
+		};
+		5E298BDC1C163AE20086104A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E298BDD1C163AE20086104A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E298C001C163B9C0086104A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E298C011C163B9C0086104A /* fonts */,
+				5E298C0B1C163B9C0086104A /* sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E298C011C163B9C0086104A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5E298C021C163B9C0086104A /* Merriweather-Black.otf */,
+				5E298C031C163B9C0086104A /* Merriweather-Bold.otf */,
+				5E298C041C163B9C0086104A /* Merriweather-BoldItalic.otf */,
+				5E298C051C163B9C0086104A /* Merriweather-HeavyItalic.otf */,
+				5E298C061C163B9C0086104A /* Merriweather-Italic.otf */,
+				5E298C071C163B9C0086104A /* Merriweather-Light.otf */,
+				5E298C081C163B9C0086104A /* Merriweather-LightItalic.otf */,
+				5E298C091C163B9C0086104A /* Merriweather-Regular.otf */,
+				5E298C0A1C163B9C0086104A /* SIL Open Font License.txt */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		5E298C0B1C163B9C0086104A /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5E298C0C1C163B9C0086104A /* click.caf */,
+				5E298C0D1C163B9C0086104A /* click.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E298BD81C163AE20086104A /* SpinningWheel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E298BF01C163AE20086104A /* Build configuration list for PBXNativeTarget "SpinningWheel" */;
+			buildPhases = (
+				5E298BD51C163AE20086104A /* Sources */,
+				5E298BD61C163AE20086104A /* Frameworks */,
+				5E298BD71C163AE20086104A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpinningWheel;
+			productName = SpinningWheel;
+			productReference = 5E298BD91C163AE20086104A /* SpinningWheel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E298BD11C163AE20086104A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Touchopia, LLC";
+				TargetAttributes = {
+					5E298BD81C163AE20086104A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 5E298BD41C163AE20086104A /* Build configuration list for PBXProject "SpinningWheel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E298BD01C163AE20086104A;
+			productRefGroup = 5E298BDA1C163AE20086104A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E298BD81C163AE20086104A /* SpinningWheel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E298BD71C163AE20086104A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E298C171C163B9C0086104A /* click.caf in Resources */,
+				5E298C121C163B9C0086104A /* Merriweather-Italic.otf in Resources */,
+				5E298BEC1C163AE20086104A /* LaunchScreen.storyboard in Resources */,
+				5E298C101C163B9C0086104A /* Merriweather-BoldItalic.otf in Resources */,
+				5E298C161C163B9C0086104A /* SIL Open Font License.txt in Resources */,
+				5E298BE91C163AE20086104A /* Assets.xcassets in Resources */,
+				5E298C111C163B9C0086104A /* Merriweather-HeavyItalic.otf in Resources */,
+				5E298C181C163B9C0086104A /* click.mp3 in Resources */,
+				5E298C141C163B9C0086104A /* Merriweather-LightItalic.otf in Resources */,
+				5E298C0F1C163B9C0086104A /* Merriweather-Bold.otf in Resources */,
+				5E298C0E1C163B9C0086104A /* Merriweather-Black.otf in Resources */,
+				5E298BE71C163AE20086104A /* Main.storyboard in Resources */,
+				5E298C151C163B9C0086104A /* Merriweather-Regular.otf in Resources */,
+				5E298C131C163B9C0086104A /* Merriweather-Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E298BD51C163AE20086104A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E298BFA1C163B260086104A /* TLImageView.m in Sources */,
+				5E298BF51C163B130086104A /* WheelViewController.m in Sources */,
+				5E298BFB1C163B260086104A /* TLSpinWheel.m in Sources */,
+				5E298BFE1C163B3B0086104A /* SoundManager.m in Sources */,
+				5E298BE11C163AE20086104A /* AppDelegate.m in Sources */,
+				5E298BDE1C163AE20086104A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E298BE51C163AE20086104A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E298BE61C163AE20086104A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E298BEA1C163AE20086104A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E298BEB1C163AE20086104A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E298BEE1C163AE20086104A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E298BEF1C163AE20086104A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E298BF11C163AE20086104A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpinningWheel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchopia.SpinningWheel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E298BF21C163AE20086104A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpinningWheel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchopia.SpinningWheel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E298BD41C163AE20086104A /* Build configuration list for PBXProject "SpinningWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E298BEE1C163AE20086104A /* Debug */,
+				5E298BEF1C163AE20086104A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E298BF01C163AE20086104A /* Build configuration list for PBXNativeTarget "SpinningWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E298BF11C163AE20086104A /* Debug */,
+				5E298BF21C163AE20086104A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E298BD11C163AE20086104A /* Project object */;
+}
