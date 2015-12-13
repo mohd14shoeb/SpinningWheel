@@ -37,6 +37,15 @@
     self.imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.imageView setContentMode:UIViewContentModeScaleAspectFit];
     [self addSubview:self.imageView];
+    
+//    UIView *leftTapView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, 130, 200)];
+//    leftTapView.backgroundColor = [UIColor redColor];
+//    [self addSubview:leftTapView];
+//
+//    UIView *rightTapView = [[UIView alloc] initWithFrame:CGRectMake(172, 20, 130, 200)];
+//    rightTapView.backgroundColor = [UIColor redColor];
+//    [self addSubview:rightTapView];
+
 }
 
 - (instancetype)initWithFrame:(CGRect)frame image:(UIImage *)anImage
@@ -60,7 +69,15 @@
 - (void)setAngle:(CGFloat)angle
 {
     [super setAngle:angle];
-    [[self.imageView layer] setTransform:CATransform3DMakeRotation(self.angle, 0, 0, 1)];
+    [UIView animateWithDuration:0.5 animations:^{
+        [self.imageView.layer setTransform:CATransform3DMakeRotation(self.angle, 0, 0, 1)];
+    } completion:^(BOOL finished) {
+        if (finished) {
+            if ([self.delegate respondsToSelector:@selector(spinWheelDidStartSpinningFromInertia:)]) {
+                [self.delegate spinWheelDidFinishSpinning:self];
+            }
+        }
+    }];
 }
 
 @end

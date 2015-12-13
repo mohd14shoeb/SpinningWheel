@@ -18,6 +18,7 @@
 - (void)playClick;
 
 @property (strong, nonatomic) UIImageView *tipImage;
+@property (strong, nonatomic) TLImageView *imageWheel;
 @end
 
 @implementation WheelViewController
@@ -54,17 +55,17 @@
     
     
     // Wheel tips
-    TLImageView *imageWheel = [[TLImageView alloc] initWithFrame:wheelFrame image:wheelTips];
+    self.imageWheel = [[TLImageView alloc] initWithFrame:wheelFrame image:wheelTips];
     
-    imageWheel.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+    self.imageWheel.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
     
-    imageWheel.delegate			= self;
-    imageWheel.enableSpinning	= YES;
+    self.imageWheel.delegate			= self;
+    self.imageWheel.enableSpinning	= YES;
     
     // Set drag of the spinning wheel
-    imageWheel.drag = 2;
+    self.imageWheel.drag = 2;
     
-    [self.view addSubview:imageWheel];
+    [self.view addSubview:self.imageWheel];
     
     
     // Wheel Cover
@@ -79,12 +80,12 @@
     
     [self.view addSubview:wheelImgView];
     [self.view addSubview:self.tipImage];
+        
 }
 
 -(void)showReminderMessage
 {
 }
-
 
 -(void)playClick
 {
@@ -148,7 +149,13 @@
     
     CGFloat newAngle = rounded * 0.78;
     
-    [spinWheel moveFromAngle:spinWheel.angle toAngle:newAngle];
+    if (spinWheel.isSpinning) {
+        [spinWheel moveFromAngle:spinWheel.angle toAngle:newAngle];
+    }
+    
+    if (rounded >= 8) {
+        rounded -= 8;
+    }
 
     if (rounded >= 0) {
         NSLog(@"Use Tip postive: %d", rounded + 1);

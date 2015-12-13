@@ -143,9 +143,25 @@
 {
     if ([touches containsObject:_currentTouch]) {
         _angularVelocity	= [self calculateFinalAngularVelocity:_currentTouch];
-        _previousTouchDate	= nil;
-        [self startAnimating];
-        _currentTouch = NULL;
+        if (_angularVelocity != 0) {
+            _previousTouchDate	= nil;
+            [self startAnimating];
+            _currentTouch = NULL;
+        } else {
+            CGPoint point = [_currentTouch locationInView:self];
+            CGRect leftTapZone = CGRectMake(0, 20, 130, 200);
+            CGRect rightTapZone = CGRectMake(172, 20, 130, 200);
+            
+            if (CGRectContainsPoint(leftTapZone, point)) {
+                //left tap
+                [self moveFromAngle:self.angle toAngle:self.angle-M_PI_4];
+
+            } else if (CGRectContainsPoint(rightTapZone, point)) {
+                //right tap
+                [self moveFromAngle:self.angle toAngle:self.angle+M_PI_4];
+            }
+            
+        }
     }
 }
 
@@ -166,12 +182,7 @@
 
 - (void)setAngle:(CGFloat)angle
 {
-    [UIView animateWithDuration:0.8
-                     animations:^{
-                         _angle = angle;
-                     }
-                     completion:^(BOOL finished){
-                     }];
+     _angle = angle;
     
     if ([_delegate respondsToSelector:@selector(spinWheelAngleDidChange:)]) {
         [_delegate spinWheelAngleDidChange:self];
@@ -186,12 +197,11 @@
         NSLog(@"left");
     }
     
-    float ang = (fromAngle<toAngle) ? fromAngle : toAngle;
-    
-    for(float newAngle = ang;newAngle < toAngle; newAngle += .01) {
-        [self setAngle:newAngle];
-        NSLog(@"newAngle==%0.2f",newAngle);
-    }
+//    float ang = (fromAngle<toAngle) ? fromAngle : toAngle;
+//    for(float newAngle = ang;newAngle < toAngle; newAngle += .01) {
+//        [self setAngle:newAngle];
+//        NSLog(@"newAngle==%0.2f",newAngle);
+//    }
     
     [self setAngle:toAngle];
     
